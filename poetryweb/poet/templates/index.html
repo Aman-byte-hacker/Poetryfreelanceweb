@@ -1,0 +1,83 @@
+{% extends 'base.html' %}
+{% block style %}
+<style>
+    body{
+        background-image: url(https://images.pexels.com/photos/1363876/pexels-photo-1363876.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+    }
+    .img_dhan{
+        width: 300px;
+        height: 300px;
+        border-radius: 50%;
+        display: block;
+        border: 2px dotted gray;
+        box-shadow: 5px 5px 5px 5px rgba(0,0,0,0.4);
+        margin-top: 5%;
+        margin-left: auto;
+        margin-right: auto;
+        background-image: url(https://i.ibb.co/tcJyH8y/dhanji.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        
+    }
+   
+    .para1{
+        text-align: center;
+        font-family: 'Staatliches', cursive;
+        margin-top: 60%;
+        
+        font-size: 20px;
+        color: darkgray;
+        
+
+        
+
+    }
+    .para2{
+        text-align: center;
+        font-family: 'Staatliches', cursive;
+        margin-top: 3%;
+        
+        font-size: 20px;
+        color: lightgrey;
+        letter-spacing: 2px;
+    }
+    .btni{
+        border: none;
+        padding: 10px;
+        padding-left: 10%;
+        padding-right: 10%;
+        background-color: #120E43;
+        color: white;
+        -webkit-animation:spin 2s linear 1;
+    -moz-animation:spin 2s linear 1;
+    animation:spin 2s linear 1;
+    overflow: hidden;
+    }
+    @-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
+@-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
+@keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
+
+    </style>
+{% endblock %}
+{% block content %}
+
+<div class="img_dhan">
+    <p  class="para1">Tere liye dekh na
+        aaj main writer bann gaya</p>
+    
+
+     
+</div>
+<p class="para">Who   Am   I</p>
+<pre class="para2">
+    Zindagi se ladta main
+    main fighter bann gaya
+    Tere liye dekh na
+    aaj main writer bann gaya</pre>
+   
+<p style="text-align: center;"><a href="/poetry"><button class="btni" type="submit">Read Poetries</button></a></p>    
+
+{% endblock %}
